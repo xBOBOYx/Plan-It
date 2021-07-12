@@ -17,3 +17,23 @@ saveBtn.on("click", function () {
     localStorage.setItem(time, schedule);
     console.log(schedule);
 });
+
+var time = moment();
+function DailyPlanIt() {
+    hour = time.hours();
+    $(".time-block").each(function () {
+        var thisHour = parseInt($(this).attr("id"));
+
+        if (thisHour > hour) {
+            $(this).addClass("future")
+        }
+        else if (thisHour === hour) {
+            $(this).addClass("present");
+        }
+        else {
+            $(this).addClass("past");
+        }
+    })
+}
+console.log(time)
+DailyPlanIt();
