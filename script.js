@@ -1,3 +1,4 @@
+
 function planIt() {
     $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
     $(".time-block").each(function () {
