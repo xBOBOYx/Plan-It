@@ -1,0 +1,1 @@
+![](assets/images/PlanIt-logo-small.jpg)
