@@ -4,7 +4,7 @@ Are you tired of missing important business meetings? Missing critical conferenc
 
 If this sounds like you, then its time to PlanIt!
 
-PlanIt is a powerful time management app that will change your work life FOREVER! We use industry leading technologies to deliver the best schduling experience on the PlanIt!
+PlanIt is a simple time management app that will change your work life FOREVER! We use industry leading technologies to deliver the best schduling experience on the PlanIt!
 
 ## Never miss another important moment with current our date display.
 
