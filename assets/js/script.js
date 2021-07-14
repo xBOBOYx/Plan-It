@@ -1,4 +1,4 @@
-
+// Date and get local storage
 function planIt() {
     $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
     $(".time-block").each(function () {
@@ -11,6 +11,10 @@ function planIt() {
 }
 planIt();
 
+console.log(planIt())
+
+
+// Save event to local storage 
 var saveBtn = $(".saveBtn");
 saveBtn.on("click", function () {
     var time = $(this).parent().attr("id");
@@ -19,7 +23,9 @@ saveBtn.on("click", function () {
     console.log(schedule);
 });
 
+// color coordinating for past, present and future.
 var time = moment();
+
 function DailyPlanIt() {
     hour = time.hours();
     $(".time-block").each(function () {
@@ -27,11 +33,9 @@ function DailyPlanIt() {
 
         if (thisHour > hour) {
             $(this).addClass("future")
-        }
-        else if (thisHour === hour) {
+        } else if (thisHour === hour) {
             $(this).addClass("present");
-        }
-        else {
+        } else {
             $(this).addClass("past");
         }
     })
